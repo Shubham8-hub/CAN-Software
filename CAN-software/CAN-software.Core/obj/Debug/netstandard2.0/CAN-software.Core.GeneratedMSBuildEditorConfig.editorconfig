@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CAN_software.Core
+build_property.ProjectDir = A:\CAN-Software\CAN-software\CAN-software.Core\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

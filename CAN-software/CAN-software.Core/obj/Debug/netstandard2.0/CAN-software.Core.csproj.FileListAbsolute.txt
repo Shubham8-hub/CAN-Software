@@ -1,0 +1,10 @@
+A:\CAN-Software\CAN-software\CAN-software.Core\bin\Debug\netstandard2.0\CAN-software.Core.deps.json
+A:\CAN-Software\CAN-software\CAN-software.Core\bin\Debug\netstandard2.0\CAN-software.Core.dll
+A:\CAN-Software\CAN-software\CAN-software.Core\bin\Debug\netstandard2.0\CAN-software.Core.pdb
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.csproj.AssemblyReference.cache
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.GeneratedMSBuildEditorConfig.editorconfig
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.AssemblyInfoInputs.cache
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.AssemblyInfo.cs
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.csproj.CoreCompileInputs.cache
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.dll
+A:\CAN-Software\CAN-software\CAN-software.Core\obj\Debug\netstandard2.0\CAN-software.Core.pdb
