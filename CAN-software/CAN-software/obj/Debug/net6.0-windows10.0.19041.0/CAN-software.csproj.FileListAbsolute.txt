@@ -78,6 +78,7 @@ A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\C
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.AssemblyInfoInputs.cache
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.AssemblyInfo.cs
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.csproj.CoreCompileInputs.cache
+A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.sourcelink.json
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.csproj.CopyComplete
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\CAN-software.dll
 A:\CAN-Software\CAN-software\CAN-software\obj\Debug\net6.0-windows10.0.19041.0\refint\CAN-software.dll

@@ -63,6 +63,7 @@
                 </i:Interaction.Behaviors>
 
                 <!--Tabs-->
+                <!-- Home tab -->
                 <Fluent:RibbonTabItem
                     Fluent:KeyTip="A"
                     behaviors:RibbonTabsBehavior.IsHomeTab="True"
@@ -70,7 +71,10 @@
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
-                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}">
+                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}" Width="250">
+                        
+                        <!-- Adding Icon to the home tab -->
+                       
                     </Fluent:RibbonGroupBox>
                     <Fluent:RibbonGroupBox
                         State="Middle"
@@ -78,6 +82,114 @@
                         Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon2Header}">
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
+                <!-- Home tab ended -->
+                
+                <!-- Added Manually-->
+                <!-- CAN Tab -->
+                <Fluent:RibbonTabItem
+                    Fluent:KeyTip="C"
+                    behaviors:RibbonTabsBehavior.IsHomeTab="False"
+                    Header="{x:Static properties:Resources.ShellPageRibbonTabCANHeader}">
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon1Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon2Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon3Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon4Header}">
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
+                <!--CAN Tab ended -->
+
+                <!-- Added Manually-->
+                <!-- J1939 Tab -->
+                <Fluent:RibbonTabItem
+                    Fluent:KeyTip="J"
+                    behaviors:RibbonTabsBehavior.IsHomeTab="False"
+                    Header="{x:Static properties:Resources.ShellPageRibbonTabJ1939Header}">
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon1Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon2Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon3Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon4Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon5Header}">
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
+                <!-- J1939 Tab ended -->
+
+                <!-- Added Manually-->
+                <!-- LIN Tab -->
+                <Fluent:RibbonTabItem
+                    Fluent:KeyTip="L"
+                    behaviors:RibbonTabsBehavior.IsHomeTab="False"
+                    Header="{x:Static properties:Resources.ShellPageRibbonTabLINHeader}">
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon1Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon2Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon3Header}">
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
+                <!--LIN Tab ended -->
+
+                <!-- Added Manually-->
+                <!-- Tools Tab -->
+                <Fluent:RibbonTabItem
+                    Fluent:KeyTip="T"
+                    behaviors:RibbonTabsBehavior.IsHomeTab="False"
+                    Header="{x:Static properties:Resources.ShellPageRibbonTabToolsHeader}">
+                    <Fluent:RibbonGroupBox
+                        State="Large"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonToolsGroupCommon1Header}">
+                    </Fluent:RibbonGroupBox>
+                    <Fluent:RibbonGroupBox
+                        State="Middle"
+                        MinWidth="150"
+                        Header="{x:Static properties:Resources.ShellPageRibbonToolsGroupCommon2Header}">
+                    </Fluent:RibbonGroupBox>
+                </Fluent:RibbonTabItem>
+                <!-- Tools Tab ended -->
+
             </Fluent:Ribbon>
             <controls:SplitView
                 Grid.Row="1"
