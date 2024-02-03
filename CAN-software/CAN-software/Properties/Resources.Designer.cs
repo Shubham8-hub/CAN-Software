@@ -79,6 +79,42 @@ namespace CAN_software.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Connect.
+        /// </summary>
+        public static string CreateConnectButtonText {
+            get {
+                return ResourceManager.GetString("CreateConnectButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New File.
+        /// </summary>
+        public static string CreateNewFileButtonText {
+            get {
+                return ResourceManager.GetString("CreateNewFileButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Recent File.
+        /// </summary>
+        public static string CreateOpenFileButtonText {
+            get {
+                return ResourceManager.GetString("CreateOpenFileButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save File.
+        /// </summary>
+        public static string CreateSaveFileButtonText {
+            get {
+                return ResourceManager.GetString("CreateSaveFileButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DisplayCanGridPg.
         /// </summary>
         public static string DisplayCanGridPgPageTitle {
@@ -111,6 +147,15 @@ namespace CAN_software.Properties {
         public static string ListDetailspgPageTitle {
             get {
                 return ResourceManager.GetString("ListDetailspgPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Port.
+        /// </summary>
+        public static string PortText {
+            get {
+                return ResourceManager.GetString("PortText", resourceCulture);
             }
         }
         
@@ -250,7 +295,7 @@ namespace CAN_software.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Common Group 2.
+        ///   Looks up a localized string similar to Saving Files.
         /// </summary>
         public static string ShellPageRibbonHomeGroupCommon2Header {
             get {

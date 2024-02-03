@@ -68,43 +68,112 @@
                     Fluent:KeyTip="A"
                     behaviors:RibbonTabsBehavior.IsHomeTab="True"
                     Header="{x:Static properties:Resources.ShellPageRibbonTabHomeHeader}">
+                    <!-- Files Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
-                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}" Width="250">
-                        
-                        <!-- Adding Icon to the home tab -->
-                       
+                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}" Width="208">
+
+                        <!-- Adding New File Icon to the home tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/create-new-file-1.png" Width="40" Height="50" VerticalAlignment="Top"/>
+                                
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateNewFileButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Open recent File Icon to the home tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/open-recent-file.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateOpenFileButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
+                    <!-- Saving Files Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
-                        MinWidth="150"
-                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon2Header}">
+                        MinWidth="100"
+                        Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon2Header}" Width="73">
+
+
+                        <!-- Adding Save File Icon to the home tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/save-file.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateSaveFileButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
                 <!-- Home tab ended -->
-                
+
                 <!-- Added Manually-->
                 <!-- CAN Tab -->
                 <Fluent:RibbonTabItem
                     Fluent:KeyTip="C"
                     behaviors:RibbonTabsBehavior.IsHomeTab="False"
                     Header="{x:Static properties:Resources.ShellPageRibbonTabCANHeader}">
+                    <!-- Hardware Configuration Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
-                        MinWidth="150"
+                        MinWidth="200"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon1Header}">
+
+                        <!-- Adding Connect Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/disconnect.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateConnectButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Grid to arrange controls -->
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Port Text -->
+                            <TextBlock Text="{x:Static properties:Resources.PortText}" VerticalAlignment="Center" Grid.Row="0"/>
+
+                            <!-- Dropdown Menu for Ports -->
+                            <ComboBox Width="150" Grid.Row="1" Margin="0,5,0,0">
+                                <ComboBoxItem Content="Select Port" IsSelected="True"/>
+                                <!-- Add other port options here -->
+                            </ComboBox>
+                        </Grid>
+
+
                     </Fluent:RibbonGroupBox>
+                    <!-- Database Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon2Header}">
                     </Fluent:RibbonGroupBox>
+                    <!-- Measurement Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon3Header}">
                     </Fluent:RibbonGroupBox>
+                    <!-- Simulation Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
@@ -210,7 +279,7 @@
                     <Frame
                         x:Name="shellFrame"
                         Focusable="False"
-                        NavigationUIVisibility="Hidden" />
+                        NavigationUIVisibility="Hidden" Margin="0,5,0,5" />
                 </controls:SplitView.Content>
             </controls:SplitView>
         </Grid>

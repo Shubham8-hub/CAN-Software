@@ -164,9 +164,11 @@
   </data>
   <data name="ShellPageRibbonHomeGroupCommon1Header" xml:space="preserve">
     <value>Files</value>
+    <comment>Home common header 1</comment>
   </data>
   <data name="ShellPageRibbonHomeGroupCommon2Header" xml:space="preserve">
-    <value>Common Group 2</value>
+    <value>Saving Files</value>
+    <comment>Home common header 2</comment>
   </data>
   <data name="ShellPageRibbonTabHomeHeader" xml:space="preserve">
     <value>Home</value>
@@ -245,5 +247,25 @@
   <data name="ShellPageRibbonToolsGroupCommon2Header" xml:space="preserve">
     <value>Editor</value>
     <comment>Tools common header 2</comment>
+  </data>
+  <data name="CreateConnectButtonText" xml:space="preserve">
+    <value>Connect</value>
+    <comment>Text feild for Connect icon in CAN common header 1</comment>
+  </data>
+  <data name="CreateNewFileButtonText" xml:space="preserve">
+    <value>New File</value>
+    <comment>Text feild for New feild icon in home common header 1</comment>
+  </data>
+  <data name="CreateOpenFileButtonText" xml:space="preserve">
+    <value>Open Recent File</value>
+    <comment>Text feild for Open Recent feild icon in home common header 1</comment>
+  </data>
+  <data name="CreateSaveFileButtonText" xml:space="preserve">
+    <value>Save File</value>
+    <comment>Text feild for Save feild icon in home common header 2</comment>
+  </data>
+  <data name="PortText" xml:space="preserve">
+    <value>Port</value>
+    <comment>Name feild of PORT</comment>
   </data>
 </root>
