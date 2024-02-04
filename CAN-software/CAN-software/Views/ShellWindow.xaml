@@ -164,20 +164,101 @@
                     <!-- Database Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
-                        MinWidth="150"
+                        MinWidth="100"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon2Header}">
+
+                        <!-- Adding Database Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/database.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateDatabaseButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+                        
                     </Fluent:RibbonGroupBox>
                     <!-- Measurement Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon3Header}">
+
+                        <!-- Adding Network Statistics Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/network-statistics.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateNetworkStatisticButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Data Logging Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/data-logging.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateDataLoggingButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+                        
                     </Fluent:RibbonGroupBox>
                     <!-- Simulation Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonCANGroupCommon4Header}">
+
+                        <!-- Adding Transmit Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/transmit-message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateTransmitMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Node Simulation Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/node-simulation.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+
+                                <TextBlock Text="{x:Static properties:Resources.CreateNodeSimulationButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
                 <!--CAN Tab ended -->
@@ -188,30 +269,157 @@
                     Fluent:KeyTip="J"
                     behaviors:RibbonTabsBehavior.IsHomeTab="False"
                     Header="{x:Static properties:Resources.ShellPageRibbonTabJ1939Header}">
+                    <!-- Activate Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon1Header}">
+
+                        <!-- Adding Connect Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/disconnect.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateConnectButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Grid to arrange controls -->
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Port Text -->
+                            <TextBlock Text="{x:Static properties:Resources.PortText}" VerticalAlignment="Center" Grid.Row="0"/>
+
+                            <!-- Dropdown Menu for Ports -->
+                            <ComboBox Width="150" Grid.Row="1" Margin="0,5,0,0">
+                                <ComboBoxItem Content="Select Port" IsSelected="True"/>
+                                <!-- Add other port options here -->
+                            </ComboBox>
+                        </Grid>
+
                     </Fluent:RibbonGroupBox>
+                    <!-- Database Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
-                        MinWidth="150"
+                        MinWidth="100"
                         Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon2Header}">
+
+                        <!-- Adding Database Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/database.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateDatabaseButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
+                    <!-- J1939 Setting Box -->
                     <Fluent:RibbonGroupBox
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon3Header}">
+
+                        <!-- Adding Open recent File Icon to the home tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/timeout-config.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateTimeoutconfigButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+                        
                     </Fluent:RibbonGroupBox>
+                    <!-- Measurement Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon4Header}">
+
+                        <!-- Adding Network Statistics Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/network-statistics.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateNetworkStatisticButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Data Logging Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/data-logging.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateDataLoggingButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
+                    <!-- Simulation Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonJ1939GroupCommon5Header}">
+
+                        <!-- Adding Transmit Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/transmit-message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateTransmitMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Node Simulation Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/node-simulation.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                
+                                <TextBlock Text="{x:Static properties:Resources.CreateNodeSimulationButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
                 <!-- J1939 Tab ended -->
@@ -226,16 +434,118 @@
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon1Header}">
+
+                        <!-- Adding Connect Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/disconnect.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateConnectButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Grid to arrange controls -->
+                        <Grid Margin="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Port Text -->
+                            <TextBlock Text="{x:Static properties:Resources.PortText}" VerticalAlignment="Center" Grid.Row="0"/>
+
+                            <!-- Dropdown Menu for Ports -->
+                            <ComboBox Width="150" Grid.Row="1" Margin="0,5,0,0">
+                                <ComboBoxItem Content="Select Port" IsSelected="True"/>
+                                <!-- Add other port options here -->
+                            </ComboBox>
+                        </Grid>
+
                     </Fluent:RibbonGroupBox>
+                    
+                    <!-- Measurement Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon2Header}">
+
+                        <!-- Adding Network Statistics Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/network-statistics.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateNetworkStatisticButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Data Logging Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/data-logging.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateDataLoggingButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
+                    
+                    <!-- Simulation Window Box -->
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonLINGroupCommon3Header}">
+
+                        <!-- Adding Transmit Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/transmit-message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateTransmitMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Trace Window Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/message.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+                                <TextBlock Text="{x:Static properties:Resources.CreateMessageButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
+                        <!-- Adding Node Simulation Icon to the CAN tab -->
+                        <Button Command="{Binding CreateNewFileCommand}" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                            <Grid Height="70">
+                                <!-- Image -->
+                                <Image Source="A:/CAN-Software/CAN-software/Icon-folder/node-simulation.png" Width="40" Height="50" VerticalAlignment="Top"/>
+
+                                <!-- Text -->
+
+                                <TextBlock Text="{x:Static properties:Resources.CreateNodeSimulationButtonText}" VerticalAlignment="Top" Margin="0,45,0,0"/>
+                            </Grid>
+                        </Button>
+
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
                 <!--LIN Tab ended -->

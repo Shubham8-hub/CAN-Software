@@ -88,11 +88,56 @@ namespace CAN_software.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add DBC File.
+        /// </summary>
+        public static string CreateDatabaseButtonText {
+            get {
+                return ResourceManager.GetString("CreateDatabaseButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Logging.
+        /// </summary>
+        public static string CreateDataLoggingButtonText {
+            get {
+                return ResourceManager.GetString("CreateDataLoggingButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trace .
+        /// </summary>
+        public static string CreateMessageButtonText {
+            get {
+                return ResourceManager.GetString("CreateMessageButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Network Statistics.
+        /// </summary>
+        public static string CreateNetworkStatisticButtonText {
+            get {
+                return ResourceManager.GetString("CreateNetworkStatisticButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New File.
         /// </summary>
         public static string CreateNewFileButtonText {
             get {
                 return ResourceManager.GetString("CreateNewFileButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Node Simulation .
+        /// </summary>
+        public static string CreateNodeSimulationButtonText {
+            get {
+                return ResourceManager.GetString("CreateNodeSimulationButtonText", resourceCulture);
             }
         }
         
@@ -111,6 +156,24 @@ namespace CAN_software.Properties {
         public static string CreateSaveFileButtonText {
             get {
                 return ResourceManager.GetString("CreateSaveFileButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Timeout Configuration.
+        /// </summary>
+        public static string CreateTimeoutconfigButtonText {
+            get {
+                return ResourceManager.GetString("CreateTimeoutconfigButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transmit Message.
+        /// </summary>
+        public static string CreateTransmitMessageButtonText {
+            get {
+                return ResourceManager.GetString("CreateTransmitMessageButtonText", resourceCulture);
             }
         }
         

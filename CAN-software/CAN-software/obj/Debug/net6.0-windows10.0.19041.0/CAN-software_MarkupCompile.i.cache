@@ -16,5 +16,5 @@ A:\CAN-Software\CAN-software\CAN-software\App.xaml
 2382121389818
 Styles\ListView.xaml;Styles\MetroWindow.xaml;Styles\TextBlock.xaml;Styles\Themes\HC.Dark.Blue.xaml;Styles\Themes\HC.Light.Blue.xaml;Styles\_FontSizes.xaml;Styles\_Thickness.xaml;Views\ContentGridpgDetailPage.xaml;Views\ContentGridpgPage.xaml;Views\DisplayCanGridPgPage.xaml;Views\HomeRibbonpgPage.xaml;Views\ListDetailspgPage.xaml;Views\SettingsPage.xaml;Views\ShellDialogWindow.xaml;Views\ShellWindow.xaml;
 
-True
+False
 

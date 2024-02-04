@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CAN-software.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d5ad6ed39921a91662a49b24c32ede0703e35da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b48107238b07d8e04c7564e6d82693c3ac664a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CAN-software.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CAN-software.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

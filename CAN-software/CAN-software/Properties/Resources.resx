@@ -268,4 +268,32 @@
     <value>Port</value>
     <comment>Name feild of PORT</comment>
   </data>
+  <data name="CreateDatabaseButtonText" xml:space="preserve">
+    <value>Add DBC File</value>
+    <comment>Text feild of Add DBC File</comment>
+  </data>
+  <data name="CreateDataLoggingButtonText" xml:space="preserve">
+    <value>Data Logging</value>
+    <comment>Text Feild of Data Logging</comment>
+  </data>
+  <data name="CreateMessageButtonText" xml:space="preserve">
+    <value>Trace </value>
+    <comment>Text Feild of Trace Window</comment>
+  </data>
+  <data name="CreateNetworkStatisticButtonText" xml:space="preserve">
+    <value>Network Statistics</value>
+    <comment>Text Feild of Network Statistics</comment>
+  </data>
+  <data name="CreateNodeSimulationButtonText" xml:space="preserve">
+    <value>Node Simulation </value>
+    <comment>Text Feild of Node Simulation </comment>
+  </data>
+  <data name="CreateTimeoutconfigButtonText" xml:space="preserve">
+    <value>Timeout Configuration</value>
+    <comment>Text Feild of Timeout Configuration</comment>
+  </data>
+  <data name="CreateTransmitMessageButtonText" xml:space="preserve">
+    <value>Transmit Message</value>
+    <comment>Text Feild of Transmit Message</comment>
+  </data>
 </root>
